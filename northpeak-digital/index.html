@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthPeak Digital | Premium Digital Agency</title>
+    <meta name="description" content="We design, build, and scale high-performance digital products that elevate your brand and drive exponential growth. Partner with NorthPeak and reach the summit.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Canvas/Mesh -->
+    <div class="glow-bg"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="m3 21 9-18 9 18H3Z"/><path d="m9 21 3-6 3 6"/></svg>
+                <span>NorthPeak</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <nav class="mobile-nav">
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#results" class="mobile-link">Results</a>
+            <a href="#pricing" class="mobile-link">Pricing</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mobile-cta">Get Started</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in">
+                    <span class="badge-text">Elevating Digital Experiences</span>
+                    <span class="badge-glow"></span>
+                </div>
+                <h1 class="hero-title animate-slide-up">Transforming Ideas Into <span class="gradient-text">Digital Peaks</span></h1>
+                <p class="hero-desc animate-slide-up">We design, build, and scale high-performance digital products that elevate your brand and drive exponential growth. Partner with NorthPeak and reach the summit.</p>
+                <div class="hero-actions animate-slide-up">
+                    <a href="#contact" class="btn btn-primary btn-lg btn-glow">Elevate Your Brand</a>
+                    <a href="#results" class="btn btn-secondary btn-lg">View Results</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual animate-fade-in-right">
+                <div class="visual-wrapper">
+                    <!-- Elegant abstract dashboard design to showcase digital performance -->
+                    <div class="card-glow"></div>
+                    <div class="floating-dashboard">
+                        <div class="dashboard-header">
+                            <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <div class="address-bar">northpeak.digital/insights</div>
+                        </div>
+                        <div class="dashboard-body">
+                            <div class="chart-header">
+                                <div class="chart-info">
+                                    <span class="label">Growth Index</span>
+                                    <span class="value">+284.5%</span>
+                                </div>
+                                <div class="chart-badge">Active</div>
+                            </div>
+                            <!-- SVG Animated Graph -->
+                            <div class="chart-container">
+                                <svg viewBox="0 0 400 150" class="performance-chart">
+                                    <defs>
+                                        <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="var(--color-primary)" stop-opacity="0.4"/>
+                                            <stop offset="100%" stop-color="var(--color-primary)" stop-opacity="0"/>
+                                        </linearGradient>
+                                        <linearGradient id="line-grad" x1="0" y1="0" x2="1" y2="0">
+                                            <stop offset="0%" stop-color="var(--color-primary)"/>
+                                            <stop offset="100%" stop-color="var(--color-accent)"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M 0 130 Q 50 110 80 80 T 160 90 T 240 40 T 320 60 T 400 10" fill="none" stroke="url(#line-grad)" stroke-width="4" class="chart-line"/>
+                                    <path d="M 0 130 Q 50 110 80 80 T 160 90 T 240 40 T 320 60 T 400 10 L 400 150 L 0 150 Z" fill="url(#chart-grad)"/>
+                                    <circle cx="240" cy="40" r="6" fill="var(--color-accent)" class="chart-point"/>
+                                    <circle cx="400" cy="10" r="6" fill="var(--color-primary)" class="chart-point"/>
+                                </svg>
+                            </div>
+                            <div class="dashboard-widgets">
+                                <div class="widget">
+                                    <div class="widget-icon"><i data-lucide="activity"></i></div>
+                                    <div class="widget-data">
+                                        <span class="num">12.8ms</span>
+                                        <span class="lbl">Avg Response</span>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="widget-icon"><i data-lucide="shield-check"></i></div>
+                                    <div class="widget-data">
+                                        <span class="num">99.99%</span>
+                                        <span class="lbl">Uptime Status</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">OUR EXPERTISE</span>
+                <h2 class="section-title">Engineered for the Digital Edge</h2>
+                <p class="section-desc">We offer end-to-end digital solutions, combining cutting-edge technology with high-fidelity design to deliver real business outcomes.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="compass" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Brand Strategy</h3>
+                    <p class="service-text">We craft unique, long-term brand frameworks and positionings that resonate deeply with targets and stand out in crowded markets.</p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="layers" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-text">User-centric product architecture and breathtaking visual designs that maximize user engagement, retention, and flow efficiency.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="code-2" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-text">Robust, lightning-fast web applications built on modern frameworks with clean, scalable codebases optimized for performance.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="trending-up" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">SEO & Marketing</h3>
+                    <p class="service-text">Data-driven search engine optimization and targeted digital marketing campaigns that drive organic visibility and customer acquisition.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="shopping-bag" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">E-commerce</h3>
+                    <p class="service-text">Custom tailored high-conversion e-commerce systems, seamless checkouts, secure gateways, and automated inventory sync integrations.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card reveal-item">
+                    <div class="card-border-glow"></div>
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="server" class="service-icon"></i>
+                    </div>
+                    <h3 class="service-title">Cloud & DevOps</h3>
+                    <p class="service-text">Secure database migrations, cloud hosting setups, automated pipelines, and persistent server monitoring architectures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Testimonials Section -->
+    <section class="results-section" id="results">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">OUR TRACTION</span>
+                <h2 class="section-title">Measurable Outcomes</h2>
+                <p class="section-desc">We measure our success by the success of our clients. Here is the concrete impact we have delivered across industries.</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="150" data-suffix="%">+0%</span>
+                    <span class="stat-label">Organic Traffic Increase</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="2.4" data-suffix="x" data-decimals="1">0x</span>
+                    <span class="stat-label">Average Conversion Rate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="12" data-prefix="$" data-suffix="M+">0M+</span>
+                    <span class="stat-label">Client Revenue Generated</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="98" data-suffix="%">0%</span>
+                    <span class="stat-label">Client Retention Rate</span>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal-item">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"NorthPeak completely overhauled our e-commerce platform. Our site speed dropped by 60%, and our checkout conversion immediately spiked by 34% within the first month. They are true technical and design wizards."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar-gradient">SC</div>
+                        <div class="author-info">
+                            <span class="name">Sarah Chambers</span>
+                            <span class="role">VP of Product, SwiftCart</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal-item">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"The UI/UX design team at NorthPeak translated our complex fintech metrics dashboard into a clean, simple, and elegant workflow that our users absolutely love. We couldn't be happier with the outcome."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar-gradient">MK</div>
+                        <div class="author-info">
+                            <span class="name">Marcus Koenig</span>
+                            <span class="role">Co-Founder, CapitalFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal-item">
+                    <div class="testimonial-rating">
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                        <i data-lucide="star" class="star fill"></i>
+                    </div>
+                    <p class="testimonial-quote">"Their brand strategy sprint gave us the focus and positioning we desperately needed before launching our Series A round. They helped us identify exactly how to communicate our value."</p>
+                    <div class="testimonial-author">
+                        <div class="avatar-gradient">EA</div>
+                        <div class="author-info">
+                            <span class="name">Elena Arai</span>
+                            <span class="role">Chief Marketing Officer, Voxel AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">PRICING PLANS</span>
+                <h2 class="section-title">Transparent Plans for Any Stage</h2>
+                <p class="section-desc">Choose a plan that fits your growth targets. No hidden fees. Cancel or adapt your requirements at any time.</p>
+                
+                <!-- Billing Switcher Toggle -->
+                <div class="billing-switcher-container">
+                    <span class="billing-label active" id="billing-monthly">Monthly</span>
+                    <button class="billing-toggle" id="billing-toggle" aria-label="Toggle billing duration">
+                        <span class="toggle-circle"></span>
+                    </button>
+                    <span class="billing-label" id="billing-yearly">Annually <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <!-- Pricing Grid -->
+            <div class="pricing-grid">
+                <!-- Tier 1: Starter -->
+                <div class="pricing-card reveal-item">
+                    <h3 class="tier-name">Starter</h3>
+                    <p class="tier-desc">Ideal for early stage startups needing a professional initial footprint.</p>
+                    <div class="tier-price-container">
+                        <span class="currency">$</span>
+                        <span class="price" id="price-starter" data-monthly="1,490" data-yearly="1,190">1,490</span>
+                        <span class="duration">/mo</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary btn-full">Choose Starter</a>
+                    <hr class="pricing-divider">
+                    <ul class="features-list">
+                        <li><i data-lucide="check" class="feature-icon"></i> Standard UI/UX Design</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Landing Page Dev (Up to 3 pages)</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Core SEO Optimizations</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Standard 2-week Delivery</li>
+                        <li class="unavailable"><i data-lucide="x" class="feature-icon"></i> Custom Animations</li>
+                        <li class="unavailable"><i data-lucide="x" class="feature-icon"></i> E-commerce Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Tier 2: Growth (Featured) -->
+                <div class="pricing-card pricing-card-featured reveal-item">
+                    <div class="popular-tag">Most Popular</div>
+                    <h3 class="tier-name">Growth</h3>
+                    <p class="tier-desc">Perfect for scaling brands requiring ongoing feature designs and code sprints.</p>
+                    <div class="tier-price-container">
+                        <span class="currency">$</span>
+                        <span class="price" id="price-growth" data-monthly="3,490" data-yearly="2,790">3,490</span>
+                        <span class="duration">/mo</span>
+                    </div>
+                    <a href="#contact" class="btn btn-primary btn-full btn-glow">Choose Growth</a>
+                    <hr class="pricing-divider">
+                    <ul class="features-list">
+                        <li><i data-lucide="check" class="feature-icon"></i> Full Web/App Custom Development</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> High-Fidelity UI/UX & Prototypes</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Advanced Animations & Micro-interactions</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Ongoing SEO & Content Strategy</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Dedicated Slack & Video Syncs</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Priority 48hr turnaround</li>
+                    </ul>
+                </div>
+
+                <!-- Tier 3: Elite / Custom -->
+                <div class="pricing-card reveal-item">
+                    <h3 class="tier-name">Elite</h3>
+                    <p class="tier-desc">Designed for enterprise partners looking for dedicated engineering bandwidth.</p>
+                    <div class="tier-price-container">
+                        <span class="currency">$</span>
+                        <span class="price" id="price-elite" data-monthly="6,490" data-yearly="5,190">6,490</span>
+                        <span class="duration">/mo</span>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary btn-full">Choose Elite</a>
+                    <hr class="pricing-divider">
+                    <ul class="features-list">
+                        <li><i data-lucide="check" class="feature-icon"></i> Full Stack Dedicated Squad</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Enterprise Architecture & API Setup</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> E-commerce, payment systems & dashboards</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Full security & cloud infrastructure audit</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Instant response Support SLA</li>
+                        <li><i data-lucide="check" class="feature-icon"></i> Unlimited requests & active review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Validation -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info-block">
+                <span class="subtitle">CONTACT US</span>
+                <h2 class="section-title">Let's Climb to the Peak Together.</h2>
+                <p class="section-desc">Have a project in mind, or want to discuss how we can accelerate your digital roadmap? Fill out the form and a senior partner will reach out within 24 hours.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <div class="detail-icon"><i data-lucide="mail"></i></div>
+                        <div class="detail-text">
+                            <span class="label">Email us directly</span>
+                            <a href="mailto:hello@northpeak.digital" class="value">hello@northpeak.digital</a>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                        <div class="detail-text">
+                            <span class="label">Our HQ</span>
+                            <span class="value">Suite 400, Peak Towers, Denver, CO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Validation Form Block -->
+            <div class="contact-form-block reveal-item">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row-2">
+                        <!-- Full Name -->
+                        <div class="form-group" id="group-name">
+                            <div class="input-wrapper">
+                                <input type="text" id="name" name="name" class="form-input" placeholder=" " required minlength="3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <span class="input-focus-border"></span>
+                            </div>
+                            <span class="error-msg" id="error-name">Name must be at least 3 characters long.</span>
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="form-group" id="group-email">
+                            <div class="input-wrapper">
+                                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <span class="input-focus-border"></span>
+                            </div>
+                            <span class="error-msg" id="error-email">Please enter a valid email address.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <!-- Project Type -->
+                        <div class="form-group" id="group-project">
+                            <div class="input-wrapper">
+                                <select id="project" name="project" class="form-input form-select" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="brand">Brand Strategy</option>
+                                    <option value="uiux">UI/UX Design</option>
+                                    <option value="webdev">Web Development</option>
+                                    <option value="seo">SEO & Marketing</option>
+                                    <option value="ecommerce">E-Commerce</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                                <label for="project" class="form-label select-label">What do you need help with?</label>
+                                <span class="input-focus-border"></span>
+                                <i data-lucide="chevron-down" class="select-chevron"></i>
+                            </div>
+                            <span class="error-msg" id="error-project">Please select a service type.</span>
+                        </div>
+
+                        <!-- Budget -->
+                        <div class="form-group" id="group-budget">
+                            <div class="input-wrapper">
+                                <select id="budget" name="budget" class="form-input form-select" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="low">&lt; $10k</option>
+                                    <option value="mid">$10k - $50k</option>
+                                    <option value="high">$50k - $100k</option>
+                                    <option value="enterprise">$100k+</option>
+                                </select>
+                                <label for="budget" class="form-label select-label">Estimated Budget</label>
+                                <span class="input-focus-border"></span>
+                                <i data-lucide="chevron-down" class="select-chevron"></i>
+                            </div>
+                            <span class="error-msg" id="error-budget">Please select a budget range.</span>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group" id="group-message">
+                        <div class="input-wrapper">
+                            <textarea id="message" name="message" class="form-input form-textarea" placeholder=" " required minlength="10"></textarea>
+                            <label for="message" class="form-label">Tell us about your project</label>
+                            <span class="input-focus-border"></span>
+                        </div>
+                        <span class="error-msg" id="error-message">Message must be at least 10 characters.</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-glow btn-full" id="submit-btn">
+                        <span>Send Message</span>
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Success Toast Notification -->
+    <div class="toast-container" id="toast-container">
+        <div class="toast-card" id="success-toast">
+            <div class="toast-icon-wrapper">
+                <i data-lucide="check-circle" class="toast-icon"></i>
+            </div>
+            <div class="toast-content">
+                <h4 class="toast-title">Message Sent!</h4>
+                <p class="toast-desc">Thanks for reaching out. We will get in touch shortly.</p>
+            </div>
+            <button class="toast-close" id="toast-close" aria-label="Close Toast">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="m3 21 9-18 9 18H3Z"/><path d="m9 21 3-6 3 6"/></svg>
+                    <span>NorthPeak</span>
+                </a>
+                <p class="footer-tagline">Building premium digital interfaces and robust architectures that elevate business capabilities to new heights.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Github"><i data-lucide="github"></i></a>
+                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4 class="column-title">Agency</h4>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#results" class="footer-link">Results</a>
+                    <a href="#pricing" class="footer-link">Pricing</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="column-title">Resources</h4>
+                    <a href="#" class="footer-link">Blog</a>
+                    <a href="#" class="footer-link">Case Studies</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Press Kit</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="column-title">Legal</h4>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Cookie Preferences</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 NorthPeak Digital. All rights reserved.</p>
+            <p class="footer-back-to-top"><a href="#hero">Back to Top <i data-lucide="arrow-up" class="back-to-top-icon"></i></a></p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
