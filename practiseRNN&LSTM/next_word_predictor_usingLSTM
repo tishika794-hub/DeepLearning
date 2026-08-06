@@ -55,7 +55,16 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 #train model
 model.fit(x,y,epochs=100)
  #prediction
-text = "mail"
-#pehle hame test data ko tokenize , pad,and then predict
+import time
+text = "what is the fee"
+for i in range(10): #jitni baar hame next word predict karna hai 
+    #tokenize
+    token_text = tokenizer.texts_to_sequences([text])[0]
+    padded_token_text = pad_sequences([token_text], maxlen= 56, padding='pre') #isse hame 56 word ka sentence milega
+    pos = np.argmax(model.predict(padded_token_text))
 
-
+    for word, index in tokenizer.word_index.items():
+        if index == pos:
+            text += " " + word
+            print(text)
+            time.sleep(2) #har 2 sec kai andar next word predict kar dega jyada time nhi lega
